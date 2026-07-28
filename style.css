@@ -1,0 +1,1049 @@
+/* ==================== GENERAL STYLES ==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #172033;
+    background-color: #F8F7F4;
+    line-height: 1.7;
+}
+
+
+/* ==================== NAVIGATION ==================== */
+
+header {
+    background-color: rgba(248, 247, 244, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #E8E5E0;
+}
+
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #172033;
+    text-decoration: none;
+}
+
+
+.logo span {
+    color: #7768AE;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+
+.nav-links a {
+    display: inline-block;
+    padding: 8px 15px;
+
+    color: #172033;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #6C5FA4;
+    background-color: #EDE9F8;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==================== HERO SECTION ==================== */
+
+/* ==================== HERO SECTION ==================== */
+
+.hero {
+    min-height: 90vh;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    position: relative;
+}
+
+
+.hero-content {
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.intro-text {
+    color: #7768AE;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    margin-bottom: 5px;
+}
+
+
+.hero h1 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(45px, 8vw, 80px);
+
+    line-height: 1.1;
+
+    margin: 10px 0;
+
+    color: #172033;
+}
+
+
+.hero h2 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(22px, 4vw, 32px);
+
+    font-weight: 500;
+
+    color: #6C5FA4;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-description {
+    max-width: 650px;
+
+    font-size: 18px;
+
+    color: #5E6472;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==================== HERO VISUAL ==================== */
+
+.hero-visual {
+    width: 380px;
+
+    height: 380px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.visual-card {
+    width: 280px;
+
+    padding: 40px 35px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid #DDD8EC;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(30, 25, 60, 0.12);
+
+    position: relative;
+
+    z-index: 2;
+
+    transform: rotate(3deg);
+
+    transition: all 0.4s ease;
+}
+
+
+.visual-card:hover {
+    transform: rotate(0deg) translateY(-8px);
+
+    box-shadow: 0 25px 60px rgba(30, 25, 60, 0.18);
+}
+
+
+.code-line {
+    padding: 15px 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #172033;
+
+    border-bottom: 1px solid #EDE9F8;
+}
+
+
+.code-line:last-child {
+    border-bottom: none;
+}
+
+
+.code-line span {
+    color: #7768AE;
+}
+
+
+/* ==================== DECORATIVE CIRCLES ==================== */
+
+.decorative-circle {
+    position: absolute;
+
+    border-radius: 50%;
+}
+
+
+.circle-one {
+    width: 180px;
+
+    height: 180px;
+
+    background-color: #EDE9F8;
+
+    top: 20px;
+
+    right: 10px;
+
+    z-index: 1;
+}
+
+
+.circle-two {
+    width: 100px;
+
+    height: 100px;
+
+    background-color: #E8A598;
+
+    bottom: 20px;
+
+    left: 20px;
+
+    opacity: 0.6;
+
+    z-index: 1;
+}
+
+/* ==================== GENERAL SECTIONS ==================== */
+
+.section {
+    padding: 100px 30px;
+}
+
+
+.section-heading {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+}
+
+
+.section-label {
+    color: #7768AE;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.section-heading h2 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 40px;
+
+    color: #172033;
+}
+
+
+/* ==================== ABOUT SECTION ==================== */
+
+.about-section {
+    background-color: #FFFFFF;
+}
+
+
+.about-content {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.about-text {
+    max-width: 800px;
+
+    color: #5E6472;
+
+    font-size: 17px;
+}
+
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+
+/* ==================== SKILLS SECTION ==================== */
+
+.skills-section {
+    background-color: #F8F7F4;
+}
+
+
+.skills-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.skill-card {
+    background-color: #FFFFFF;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #E8E5E0;
+
+    transition: all 0.3s ease;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #C8C3D8;
+
+    box-shadow: 0 15px 30px rgba(30, 25, 60, 0.1);
+}
+
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #EDE9F8;
+
+    color: #6C5FA4;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+.skill-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    margin-bottom: 10px;
+}
+
+
+.skill-card p {
+    color: #6B7280;
+
+    font-size: 15px;
+}
+
+
+/* ==================== PROJECT SECTION ==================== */
+
+.projects-section {
+    background-color: #FFFFFF;
+}
+
+
+.project-card {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(135deg,
+            #F1EEF9,
+            #FFFFFF);
+
+    border: 1px solid #DDD8EC;
+
+    transition: all 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(30, 25, 60, 0.1);
+}
+
+
+.project-content {
+    max-width: 750px;
+}
+
+
+.project-number {
+    color: #7768AE;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.project-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+
+.project-card p {
+    color: #5E6472;
+
+    margin-bottom: 20px;
+}
+
+
+.technologies {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+.technologies span {
+    padding: 6px 14px;
+
+    background-color: #EDE9F8;
+
+    color: #625495;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ==================== EDUCATION SECTION ==================== */
+
+.education-section {
+    background-color: #F8F7F4;
+}
+
+
+.education-card {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #FFFFFF;
+
+    border-left: 5px solid #7768AE;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(30, 25, 60, 0.05);
+}
+
+
+.education-year {
+    color: #7768AE;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+
+.education-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 24px;
+
+    margin-bottom: 5px;
+}
+
+
+.education-card p {
+    color: #6B7280;
+}
+
+
+/* ==================== CONTACT SECTION ==================== */
+
+/* ==================== CONTACT SECTION ==================== */
+
+.contact-section {
+    background-color: #F8F7F4;
+}
+
+
+.contact-content {
+    max-width: 750px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.contact-content > p {
+    color: #5E6472;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+.contact-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.contact-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 14px 22px;
+
+    background-color: #FFFFFF;
+
+    color: #172033;
+
+    border: 1px solid #E8E5E0;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-item:hover {
+    transform: translateY(-5px);
+
+    background-color: #F1EEF9;
+
+    border-color: #C8C3D8;
+
+    box-shadow: 0 10px 25px rgba(30, 25, 60, 0.08);
+}
+
+
+.contact-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 30px;
+
+    height: 30px;
+
+    background-color: #EDE9F8;
+
+    color: #7768AE;
+
+    border-radius: 50%;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ==================== CONTACT MOBILE ==================== */
+
+@media (max-width: 768px) {
+
+    .contact-links {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .contact-item {
+        width: 100%;
+
+        max-width: 300px;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* ==================== FOOTER ==================== */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #111827;
+
+    color: #9CA3AF;
+
+    font-size: 14px;
+}
+
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        text-align: center;
+    }
+
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-visual {
+        width: 300px;
+        height: 300px;
+    }
+
+    .visual-card {
+        width: 240px;
+    }
+
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-card {
+        padding: 30px;
+    }
+
+
+    .section {
+        padding: 70px 20px;
+    }
+
+}
+/* ==================== PROJECT DETAILS PAGE ==================== */
+
+
+/* Project Hero */
+
+.project-hero {
+    min-height: 60vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 30px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #EDE9F8 0%,
+            transparent 35%
+        );
+}
+
+
+.project-hero-content {
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.project-hero h1 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(40px, 7vw, 65px);
+
+    line-height: 1.2;
+
+    color: #172033;
+
+    margin: 15px 0 25px;
+}
+
+
+.project-hero p:not(.section-label) {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #5E6472;
+
+    font-size: 18px;
+}
+
+
+/* Project Overview */
+
+.project-overview {
+    background-color: #FFFFFF;
+}
+
+
+.project-overview-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #5E6472;
+
+    font-size: 17px;
+}
+
+
+.project-overview-content p {
+    margin-bottom: 20px;
+}
+
+
+/* Technologies */
+
+.project-tech {
+    background-color: #F8F7F4;
+}
+
+
+.project-tech-list {
+    max-width: 900px;
+
+    margin: auto;
+
+    justify-content: center;
+}
+
+
+/* Features */
+
+.project-features {
+    background-color: #FFFFFF;
+}
+
+
+.features-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature-card {
+    padding: 30px;
+
+    background-color: #F8F7F4;
+
+    border: 1px solid #E8E5E0;
+
+    border-radius: 15px;
+
+    transition: all 0.3s ease;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    background-color: #F1EEF9;
+
+    border-color: #C8C3D8;
+
+    box-shadow: 0 15px 30px rgba(30, 25, 60, 0.08);
+}
+
+
+.feature-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    margin-bottom: 12px;
+
+    color: #172033;
+}
+
+
+.feature-card p {
+    color: #6B7280;
+
+    font-size: 15px;
+}
+
+
+/* Screenshots */
+
+.screenshots-section {
+    background-color: #F8F7F4;
+}
+
+
+.screenshots-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.screenshot-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #F8F7F4;
+}
+
+
+.screenshot-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 15px 30px rgba(30, 25, 60, 0.1);
+}
+
+
+.screenshot-placeholder {
+    min-height: 250px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #EDE9F8;
+
+    color: #7768AE;
+
+    border-radius: 10px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.screenshot-card h3 {
+    font-family: "Poppins", sans-serif;
+
+    font-size: 18px;
+
+    padding: 5px;
+}
+
+
+/* Learning Section */
+
+.learning-section {
+    background-color: #FFFFFF;
+}
+
+
+.learning-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    color: #5E6472;
+
+    font-size: 17px;
+}
+
+
+.learning-content p {
+    margin-bottom: 20px;
+}
+
+
+/* Back to Portfolio */
+
+.project-back {
+    padding: 60px 30px;
+
+    text-align: center;
+
+    background-color: #F8F7F4;
+}
+
+
+/* ==================== PROJECT PAGE MOBILE ==================== */
+
+@media (max-width: 768px) {
+
+    .project-hero {
+        min-height: 60vh;
+
+        padding: 70px 20px;
+    }
+
+
+    .project-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .screenshots-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-overview-content,
+    .learning-content {
+        font-size: 16px;
+    }
+
+}
